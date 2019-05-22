@@ -1,0 +1,60 @@
+{
+    "system": {
+      "host": "myopenhab.umbrela.co",
+      "port": "443",
+      "protocol": "https",
+      "logger" : {
+        "dir": "./logs",
+        "maxFiles" : "7d",
+        "level" : "debug",
+        "morganOption" : null
+      },
+      "subDomainCookies": false,
+      "muteNotifications": false
+    },
+    "express":{
+      "key" : "some express key"
+    },
+    "apn" : {
+      "gateway": "gateway.push.apple.com",
+      "cert": "certs/aps/aps_production_cert.pem",
+      "key": "certs/aps/aps_production_key.pem",
+      "passphrase": "passphrase"
+    },
+    "gcm" : {
+      "jid": "something@gcm.googleapis.com",
+      "password": "password"
+    },
+    "ifttt" : {
+      "iftttChannelKey" : "key",
+      "iftttTestToken" : "token"
+    },
+    "mail": {
+      "host" : "smtp",
+      "port" : 465,
+      "user" : "foo@bar.com",
+      "pass" : "password"
+    },
+    "mongodb": {
+        "hosts": ["127.0.0.1"],
+        "db": "openhab"
+    },
+    "redis": {
+        "host": "127.0.0.1",
+        "port": "6379",
+        "password": "password"
+    },
+    "mailer": {
+        "host" : "smtp.gmail.com",
+        "port": 587,
+        "secureConnection": false,
+        "user": "smartsnsz@gmail.com",
+        "password": "Morning123456",
+        "from": "openHAB Cloud <smartsnsz@gmail.com>"
+    },
+    "legal": {
+        "terms" : "",
+        "policy": ""
+    },
+    "registration_enabled": true
+}
