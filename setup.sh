@@ -1,4 +1,4 @@
-sudo ln -fs /usr/share/zoneinfo/Canada/Central /etc/localtime
+﻿sudo ln -fs /usr/share/zoneinfo/Canada/Central /etc/localtime
 
 sudo apt-get update -y && sudo apt-get upgrade -y
 sudo apt-get install -y build-essential redis-server mongodb nginx python git
@@ -40,7 +40,6 @@ cd ~/openhab-cloud
 
 sudo nohup node app.js &
 sudo service nginx restart
-
 
 # $ sudo crontab -l
 # * 7,19 * * * certbot -q renew
